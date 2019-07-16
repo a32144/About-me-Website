@@ -1,0 +1,53 @@
+html{
+	width:400px;
+	margin: auto;
+	background-color:lightcyan;
+	font-family:verdana}
+
+.collapsible {
+  background-color:#189;
+  color: lightcyan;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family:fantasy
+}
+
+.active, .collapsible:hover {
+  background-color: #014;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: paleturquoise;
+}
+
+
+body{
+	background-color:paleturquoise;
+	border:double 5px darkblue;
+	padding:10px}
+
+
+h1{
+	color:darkblue;
+	border-bottom:solid 2px;
+	text-align: center;}
+h3{
+	color:darkblue;
+	font-family:fantasy;}
+p1{
+	color:#014;}
+	
+img{
+	border-radius:8px;
+	border:solid 3px white;
+	padding: 5px;
+	float:right;}
