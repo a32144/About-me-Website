@@ -1,0 +1,105 @@
+<html>
+<head>
+<title> Amber Who? Amber Hughes </title>
+<link rel="stylesheet" href= "styles.css">
+<script src= "myScript.js"> </script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<p id="demo"></p>
+
+<h1 onclick="changeText(this)">Amber Who?</h1>
+
+
+
+
+
+
+
+<p> (click title)</p>
+
+
+<h3>All About Amber:</h3>
+<button class="collapsible">General:</button>
+<div class="content">
+  <p1>Amber was born on August 24, 2002 in Los Angeles, CA.
+She has an 11 year old sister named Ashley and a dog named Teddy.
+She is half Salvadorian and half white.
+Amber currently lives in Northridge, CA and is a rising senior at Granada Hills Charter High School.
+She is in Cohort 7 of the International Baccalaureate Program and loves the program. In the future, she hopes to become an aerospace engineer, adopt 2 cats, a dog, and live on the beach.</p1>
+</p1><br>
+
+<button onclick="document.getElementById('myImagee').src='doggo.jpg'">Doggo</button>
+
+<img id="myImagee" src="beach.jpg" style="width:250px">
+
+<button onclick="document.getElementById('myImagee').src='beach.jpg'">Beach</button>
+
+
+</div>
+
+<h3>Learn More About her:</h3>
+<button class="collapsible">Running</button>
+<div class="content">
+  <p><img src= "shoes.jpg"
+width="250px"
+alt= "aesthetic running shoes pic">
+<p1>
+  Amber likes to run with her Cross Country and Track and Field Team.
+  In Cross Country, she and her teammates won 1st in LA City Finals for Varisty Girls
+  and competed at the State competition.
+</p1>
+</div>
+<button class="collapsible">Violin</button>
+<div class="content">
+  <p><img src= "trophey.jpg"
+width="150px"
+alt= "shinyyy">
+<p1>She also plays violin, both as a soloist and in an orchestra.
+Amber started playing violin when she was 9, inspired by her grandmother, a professional violinist.
+
+As a soloist, she has competed in a few competitions.
+Colburn String Orchestra, and, currently, the CSUN Youth Philharmonic, conducted under Dr. Roscigno.
+She is also currently working with a small ensemble at CSUN to raise money for the food pantry.
+</p1>
+</div>
+<button class="collapsible">Helping Out</button>
+<div class="content">
+  <p1>Amber volunteers avidly at her church, from lectoring to altar serving to singing as a choir member.
+  Amber is also very much so a kid at heart and loves to volunteer with them.
+  Through various volunteering for her project <i><a href= "https://www.instagram.com/stem.bassadors/"> Stembassdors</a></i>, she <strike> hangs out</strike> teaches STEM lessons to those without access.
+<img src="gogirls.jpg"
+width= "200px"
+alt="children"></p1>
+</div>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
